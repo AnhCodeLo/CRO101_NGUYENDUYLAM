@@ -18,7 +18,7 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Nguyễn Duy Lâm!</ThemedText>
+        <ThemedText type="title">Nguyễn Duy Lâm PD!</ThemedText>
         <HelloWave />
       </ThemedView>
 
