@@ -11,12 +11,12 @@ import { FontAwesome, MaterialIcons } from "@expo/vector-icons";
 const HoiAnScreen = () => {
   return (
     <View style={styles.container}>
-      {/* Ảnh nền chứa toàn bộ nội dung */}
+      {}
       <ImageBackground
-        source={require("../lab5_bai3/hoian.png")} // Đổi thành ảnh của bạn
+        source={require("../lab5_bai3/hoian.png")}
         style={styles.imageBackground}
       >
-        {/* Lớp phủ để làm mờ ảnh giúp text dễ đọc */}
+        {}
         <View style={styles.overlay}>
           {/* Tiêu đề và đánh giá */}
           <View style={styles.headerContainer}>
@@ -75,30 +75,30 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     height: "100%",
-    justifyContent: "flex-end", // Đẩy nội dung xuống
+    justifyContent: "flex-end",
   },
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.4)", // Làm mờ nền giúp text dễ đọc
+    backgroundColor: "rgba(0,0,0,0.4)",
     justifyContent: "flex-end",
     paddingBottom: 20,
     paddingHorizontal: 20,
   },
   header: {
     position: "absolute",
-    top: "58%", // Điều chỉnh cao hơn
+    top: "58%",
     left: 40,
-    zIndex: 2, // Đảm bảo hiển thị trên ảnh
+    zIndex: 2,
   },
   favoriteButton: {
     position: "absolute",
     right: 20,
-    top: 20, // Sử dụng giá trị số thay vì "%"
+    top: 20,
     backgroundColor: "red",
     padding: 10,
     borderRadius: 50,
-    elevation: 5, // Đổ bóng
-    zIndex: 2, // Đảm bảo nút nằm trên các phần khác
+    elevation: 5,
+    zIndex: 2,
   },
 
   title: {
@@ -119,14 +119,14 @@ const styles = StyleSheet.create({
   favoriteButton: {
     position: "absolute",
     right: 20,
-    top: 50,
+    top: 10,
     backgroundColor: "red",
     padding: 10,
     borderRadius: 50,
-    elevation: 5, // Đổ bóng
+    elevation: 5,
   },
   detailsContainer: {
-    backgroundColor: "rgba(255,255,255,0.9)", // Làm mờ nền trắng
+    backgroundColor: "rgba(255,255,255,0.9)",
     padding: 20,
     borderRadius: 15,
   },
@@ -151,13 +151,13 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   bookingContainer: {
-    backgroundColor: "#0057B7", // Màu xanh đậm
-    flexDirection: "row", // Hiển thị ngang
-    justifyContent: "space-between", // Căn hai đầu
-    alignItems: "center", // Căn giữa theo chiều dọc
+    backgroundColor: "#0057B7",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     paddingVertical: 15,
     paddingHorizontal: 20,
-    borderRadius: 15, // Bo góc
+    borderRadius: 15,
     marginTop: 20,
   },
   price: {
