@@ -9,7 +9,6 @@ import CustomDrawerContent from "./CustomDrawerContent";
 
 const Drawer = createDrawerNavigator();
 
-// Tạo Component Trống cho các mục menu chưa có màn hình
 const PlaceholderScreen = ({ route }) => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     <Text style={{ fontSize: 18 }}>{route.name} Screen</Text>
